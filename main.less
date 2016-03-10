@@ -6,7 +6,7 @@
 @logo-red-light: lighten(@logo-red, 70%);
 
 //TYPE VARIABLES
-@regular: 18px;
+@regular: 1em;
 @large: @regular * 1.5;
 @x-large: @large * 2;
 
@@ -15,6 +15,11 @@ body {
   font-size: @regular;
   background-color: @logo-red-mute;
   color: @logo-red-light;
+}
+
+.page_container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -32,6 +37,7 @@ h1 {
 h2 {
   font-size: @large;
   font-weight: bold;
+  line-height: 80%;
 +p {
   margin-top: 36px;
  }
@@ -39,16 +45,36 @@ h2 {
 
 
 img{
-  width: 300px;
-  margin: 20px 20px 20px 0px;
+  width: 30%;
+  margin: 20px 20px 20px 0;
   float: left;
 }
 
 p {
   img {
-    float: none;
+    float: right;
     width: 100px;
     margin-left: 20px;
     margin-right: 0;
   }
 }
+
+
+//BREAKPOINTS
+@media screen and (min-width: 550px) {
+  body {
+    font-size: 1.1 em;
+  }
+  h1 {
+    font-size: @x-large;
+  }
+
+.page_container {
+  width: 80%;
+}
+}
+ @media screen and (min-width: 900px) {
+   body {
+     font-size: 1.2em
+   }
+ }

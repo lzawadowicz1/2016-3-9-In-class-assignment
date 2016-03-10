@@ -1,13 +1,17 @@
 body {
   font-family: 'Indie Flower', cursive;
-  font-size: 18px;
+  font-size: 1em;
   background-color: #4d1919;
   color: #ffcccc;
+}
+.page_container {
+  width: 90%;
+  margin: 0 auto;
 }
 h1 {
   margin-bottom: 20px;
   border-top: solid #660000 15px;
-  font-size: 54px;
+  font-size: 3em;
   color: white;
   font-family: 'Pacifico', cursive;
 }
@@ -15,20 +19,37 @@ h1 + h2 {
   margin-top: -20px;
 }
 h2 {
-  font-size: 27px;
+  font-size: 1.5em;
   font-weight: bold;
+  line-height: 80%;
 }
 h2 + p {
   margin-top: 36px;
 }
 img {
-  width: 300px;
-  margin: 20px 20px 20px 0px;
+  width: 30%;
+  margin: 20px 20px 20px 0;
   float: left;
 }
 p img {
-  float: none;
+  float: right;
   width: 100px;
   margin-left: 20px;
   margin-right: 0;
+}
+@media screen and (min-width: 550px) {
+  body {
+    font-size: 1.1 em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  .page_container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 1.2em;
+  }
 }
