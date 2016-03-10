@@ -1,4 +1,5 @@
 body {
+  font-family: 'Indie Flower', cursive;
   font-size: 18px;
   background-color: #4d1919;
   color: #ffcccc;
@@ -8,13 +9,26 @@ h1 {
   border-top: solid #660000 15px;
   font-size: 54px;
   color: white;
+  font-family: 'Pacifico', cursive;
 }
 h1 + h2 {
   margin-top: -20px;
 }
 h2 {
   font-size: 27px;
+  font-weight: bold;
 }
 h2 + p {
   margin-top: 36px;
+}
+img {
+  width: 300px;
+  margin: 20px 20px 20px 0px;
+  float: left;
+}
+p img {
+  float: none;
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 0;
 }

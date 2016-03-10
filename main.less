@@ -6,14 +6,49 @@
 @logo-red-light: lighten(@logo-red, 70%);
 
 //TYPE VARIABLES
-
+@regular: 18px;
+@large: @regular * 1.5;
+@x-large: @large * 2;
 
 body {
+  font-family: 'Indie Flower', cursive;
+  font-size: @regular;
   background-color: @logo-red-mute;
   color: @logo-red-light;
 }
 
 h1 {
+  margin-bottom: 20px;
   border-top: solid @logo-red 15px;
+  font-size: @x-large;
   color: white;
+  font-family: 'Pacifico', cursive;
+
++h2 {
+  margin-top: -20px;
+ }
+}
+
+h2 {
+  font-size: @large;
+  font-weight: bold;
++p {
+  margin-top: 36px;
+ }
+}
+
+
+img{
+  width: 300px;
+  margin: 20px 20px 20px 0px;
+  float: left;
+}
+
+p {
+  img {
+    float: none;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 0;
+  }
 }
