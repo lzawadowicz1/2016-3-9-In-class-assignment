@@ -1,3 +1,8 @@
 body {
-  background-color: #660000;
+  background-color: #4d1919;
+  color: #ffcccc;
+}
+h1 {
+  border-top: solid #660000 15px;
+  color: white;
 }
